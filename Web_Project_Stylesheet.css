@@ -1,0 +1,172 @@
+:root{
+    --headerHeight: 16%;
+    --footerHeight: 30px;
+    --mainHeight: calc(100% - var(--footerHeight) - var(--headerHeight));
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    margin:0;
+}
+
+header{
+    height: var(--headerHeight);
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    height: var(--mainHeight);
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+footer{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: var(--footerHeight);
+    bottom: 0;
+    width:100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+}
+
+/*--------------Top_Header------------------------------------*/
+.Top_Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerImage{
+    height: 3em;
+    width: 3em;
+    margin:1em;
+}
+
+.Top_Header h1{
+    font-size: 2em;
+    font-weight: bolder;
+    color: white;
+    
+}
+.orange{
+    /*background-color: orange;*/
+    color:black
+}
+
+.menuButton button{
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    padding: 0;
+    background-color: red;
+    border: 0;
+    font-size: 2em;
+    font-weight: bolder;
+    color: white;
+}
+
+.menuButton button:hover{
+    background-color: rgb(255, 144, 144);
+    cursor:pointer;
+}
+
+.showButton{
+    display: none;
+}
+
+.hideButton{
+    display: block;
+    transform: rotate(90deg) ;
+}
+
+/*--------------Bottom_Header_Nav------------------------------------*/
+.Bottom_Header_Nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    height: 100%;
+    background-color: lightgray;
+}
+.Bottom_Header_Nav button{
+    flex-grow: 1;
+    background-color: inherit;
+    border: 0;
+}
+
+.Bottom_Header_Nav button:hover{
+    border-bottom: 2px solid black;
+    font-weight: bold;
+    cursor:  pointer;
+}
+
+/*===================MAIN==============================================*/
+
+
+/*--------------Left_Main_Nav---------------------------------------*/
+.Left_Main{
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    width: 15%;
+    background-color: rgb(255, 230, 0);
+}
+ .Left_Main h2{
+    font-size: 15px;
+ }
+
+ .Left_Main ul{
+    list-style: none;
+    transform: translateX(-40px) ;
+    width:100%;
+ }
+ .Left_Main li{
+    padding: 0.7em;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: justify;
+ }
+.Left_Main li:hover{
+    background-color: beige;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*-----------------Middle_Main--------------------------------------*/
+.Middle_Main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    background-color: rgb(218, 222, 103);
+}
+/*--------------Top_Main--------------------------------------------*/
+.Top_Main{
+    background-color: blue;
+    flex:1;
+}
+/*--------------Bottom_Main-----------------------------------------*/
+.Bottom_Main{
+    background-color: blueviolet;
+    flex:1;
+}
+
+
+/*--------------Right_Main_Ad---------------------------------------*/
+.Right_Main{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    background-color: rgb(238, 255, 0);
+}
+
+/*==============Footer=================================*/
+footer h2{
+    font-size: 10px;
+
+}

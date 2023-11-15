@@ -1,0 +1,28 @@
+.Tetris{
+    flex-grow: 1;
+    margin: 3%;
+    background-color: aqua;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: scroll;
+}
+      
+    .Right_Column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+
+    .playButton {
+        background-color: #4caf50;
+        font-size: 16px;
+        padding: 15px 30px;
+        cursor: pointer;
+    }
+
+#board{
+    background-color: aliceblue;
+    color: Black;
+    margin: 10px;
+}
